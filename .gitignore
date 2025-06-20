@@ -1,0 +1,23 @@
+# Visual Studio
+.vs/
+*.suo
+*.user
+
+# .NET Build
+[Bb]in/
+[Oo]bj/
+
+# Node
+node_modules/
+dist/
+npm-debug.log
+
+# Databases
+*.db
+*.sqlite
+
+# IDE
+.idea/
+.vscode/launch.json
+.vscode/tasks.json
+.DS_Store 

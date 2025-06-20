@@ -1,0 +1,8 @@
+{
+  "global_rules": [
+    "Usar Angular 19",
+    "Evitar TypeScript estricto",
+    "No usar TypeScript en el backend",
+    "Usar SQLite"
+  ]
+}
