@@ -7,6 +7,15 @@ using ProductosAPI.Services;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.WebHost.UseSentry(o =>
+{
+    o.Dsn = "https://08c57dd153501c7d2d2ccc3dddc49930@o4509531306459136.ingest.us.sentry.io/4509531314913280";
+    // Activar el seguimiento de rendimiento
+    o.TracesSampleRate = 1.0;
+    // Activar el modo de depuración en desarrollo
+    o.Debug = builder.Environment.IsDevelopment();
+});
+
 builder.Services.AddControllers();
 
 // Configurar CORS para permitir todas las solicitudes
